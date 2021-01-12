@@ -3,15 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>CSS</title>
+    <style media="screen">
+      #active{color: skyblue;}
+      h1{border-bottom: 2px gray solid ; text-align: center; margin: 0; padding: 20px; font-size: 50px;}
+      a{text-decoration: none; color: black;}
+      body{margin: 0;}
+      ol{ border-right: 2px gray solid; margin: 0; width: 100px; padding-top: 20px;}
+      #grid{display: grid; grid-template-columns: 150px 1fr;}
+      #article{padding-left: 20px;}
+    </style>
   </head>
   <body>
     <h1><a href="index.html">Web</a></h1>
+    <div id="grid">
     <ol>
       <li><a href="복습html.html">html</a></li>
-      <li><a href="복습css.html">CSS</a></li>
+      <li><a href="복습css.html" id="active">CSS</a></li>
       <li><a href="복습JavaScript.html">JavaScript</a></li>
     </ol>
+    <div id="article">
     <h2>CSS</h2>
-    <p>Cascading Style Sheets (<a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]</p><img src="Paris.jpg" alt="" width="70%"><p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant <strong>CSS</strong> in a separate .<br>css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+    <p>Cascading Style Sheets (<a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="ac">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]</p><img src="Paris.jpg" alt="" width=50%>
+    <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant <strong>CSS</strong> in a separate .<br>css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+  </div>
+  </div>
   </body>
 </html>
